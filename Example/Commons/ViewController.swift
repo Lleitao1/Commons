@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import Commons
 
 class ViewController: UIViewController {
-
+    
+    let price = 1.99
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        Formatter.currency.locale = .uk
+        print(price.currency)  // "£1.99\n"
     }
 
     override func didReceiveMemoryWarning() {
