@@ -25,12 +25,14 @@ public extension Formatter {
     static let currency = NumberFormatter(style: .currency)
     static let currencyUS = NumberFormatter(style: .currency, locale: .us)
     static let currencyBR = NumberFormatter(style: .currency, locale: .br)
+    static let currencyUK = NumberFormatter(style: .currency, locale: .uk)
 }
 
 public extension Numeric {
     var currency: String { Formatter.currency.string(for: self) ?? "" }
     var currencyUS: String { Formatter.currencyUS.string(for: self) ?? "" }
     var currencyBR: String { Formatter.currencyBR.string(for: self) ?? "" }
+    var currencyBR: String { Formatter.currencyUK.string(for: self) ?? "" }
 }
 
 
