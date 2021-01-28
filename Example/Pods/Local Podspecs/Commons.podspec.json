@@ -18,5 +18,10 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "Commons/Classes/**/*"
+  "source_files": "Commons/Classes/**/*",
+  "dependencies": {
+    "Alamofire": [
+      "~> 4.7.0"
+    ]
+  }
 }
