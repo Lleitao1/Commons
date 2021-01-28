@@ -10,26 +10,26 @@ import Foundation
 let sharedFavorites = Favorites()
 
 class Favorites {
-    public func getFavorites() -> [String:[String: String]] {
+    func getFavorites() -> [String:[String: String]] {
         guard let favorites = UserDefaults.standard.object(forKey: "favorites") as? [String:[String: String]] else { return [:]}
         return favorites
     }
 
-    public func checkIfFirstTime() {
+    func checkIfFirstTime() {
         if UserDefaults.standard.object(forKey: "favorites") as? [String:[String: String]] == nil {
             UserDefaults.standard.set([:], forKey: "favorites")
         }
     }
-    public func toggleFavorite(coin:CoinViewData) {
+    func toggleFavorite(shortname:String, name:String, price:String, idIcon: String) {
         var favorites = getFavorites()
-        if favorites[coin.shortname] == nil {
-            favorites[coin.shortname] = ["name":coin.name,"price":coin.price, "idIcon":coin.idIcon]
+        if favorites[shortname] == nil {
+            favorites[shortname] = ["name":name,"price":price, "idIcon":idIcon]
         } else {
-            favorites[coin.shortname] = nil
+            favorites[shortname] = nil
         }
         UserDefaults.standard.set(favorites, forKey: "favorites")
     }
-    public func checkIfFavorite(assetId:String) -> Bool{
+    func checkIfFavorite(assetId:String) -> Bool{
         let favorites = getFavorites()
         if favorites[assetId] != nil {
             return true
