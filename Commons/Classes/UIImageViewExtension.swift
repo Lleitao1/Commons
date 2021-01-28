@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import AlamoFire
+import Alamofire
 
 extension UIImageView {
 
