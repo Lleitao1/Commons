@@ -19,6 +19,7 @@
     "ios": "9.0"
   },
   "source_files": "Commons/Classes/**/*",
+  "frameworks": "UIKit",
   "dependencies": {
     "Alamofire": [
       "~> 4.7.0"
