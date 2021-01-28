@@ -1,7 +1,10 @@
 PODS:
   - Alamofire (4.7.3)
-  - Commons (0.1.0):
+  - AlamofireImage (3.4.1):
+    - Alamofire (~> 4.7)
+  - Commons (1.0.0):
     - Alamofire (~> 4.7.0)
+    - AlamofireImage (~> 3.4.0)
   - SwiftLint (0.42.0)
 
 DEPENDENCIES:
@@ -11,6 +14,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - AlamofireImage
     - SwiftLint
 
 EXTERNAL SOURCES:
@@ -19,7 +23,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  Commons: 397e550a79b65b973ba0f0b41bc9a75f4072aae5
+  AlamofireImage: 78d67ccbb763d87ba44b21583d2153500a195630
+  Commons: d94aaac26d26a8bdc8e6686bca345428ab2934f7
   SwiftLint: 4fa9579c63416865179bc416f0a92d55f009600d
 
 PODFILE CHECKSUM: ffd3b31d4eb6fc2a6cf1121a37e763ad7eb423b5
