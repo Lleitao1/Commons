@@ -7,7 +7,7 @@
 
 import Foundation
 
-public let sharedFavorites = Favorites()
+let sharedFavorites = Favorites()
 
 class Favorites {
     public func getFavorites() -> [String:[String: String]] {
