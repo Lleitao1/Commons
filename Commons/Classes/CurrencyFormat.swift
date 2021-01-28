@@ -32,7 +32,7 @@ public extension Numeric {
     var currency: String { Formatter.currency.string(for: self) ?? "" }
     var currencyUS: String { Formatter.currencyUS.string(for: self) ?? "" }
     var currencyBR: String { Formatter.currencyBR.string(for: self) ?? "" }
-    var currencyBR: String { Formatter.currencyUK.string(for: self) ?? "" }
+    var currencyUK: String { Formatter.currencyUK.string(for: self) ?? "" }
 }
 
 
