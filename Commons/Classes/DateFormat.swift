@@ -7,8 +7,8 @@
 
 import Foundation
 
-public let date = Date()
-public let data = date.getFormattedDate(format: "dd MMM yyyy") // Set output format
+
+public let data = Date().getFormattedDate(format: "dd MMM yyyy") // Set output format
 
 public extension Date {
    func getFormattedDate(format: String) -> String {
